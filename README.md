@@ -25,3 +25,15 @@ python3 manage.py createsuperuser
 
 # run development server
 python3 manage.py runserver
+
+# run interactive django shell
+python3 manage.py shell_plus
+
+ - On the shell you can run things like:
+
+   User.objects.all()
+
+   or
+
+   for user in User.objects.all():
+       print user.id, user.__dict__
